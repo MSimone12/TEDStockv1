@@ -9,6 +9,7 @@
 
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
         <!-- Styles -->
         <style>
@@ -46,6 +47,7 @@
 
             .title {
                 font-size: 84px;
+                border: 1px solid;
             }
 
             .links > a {
@@ -92,6 +94,23 @@
               font-size: 40px;
               margin: 10px;
               line-height: 100px;
+            }
+            .search{
+              width: 100%;
+              height: 500px;
+              line-height: 500px;
+              text-align: center;
+            }
+            .search input{
+              height: 50px;
+              width: 500px;
+              border-radius: 8px;
+              border: 1px solid #636b6f;
+            }
+            .search button{
+              height: 50px;
+              width: 50px;
+              border-radius: 8px;
             }
         </style>
     </head>
