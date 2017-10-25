@@ -3,9 +3,24 @@
 @section('titulo', 'TEDStock')
 
 @section('conteudo')
-
-  <div class="search">
-    <input type="search" name="search-principal" />
-    <button type="button" name="botao_principal" class="btn btn-primary"><span class="glyphicon glyphicon-search"></span></button>
+  <div class="container">
+    <h3 class="center">Imagens</h3>
+    <div class="row">
+      <table>
+        <thead>
+          <tr>
+            <th>Imagem</th>
+            <th>Nome</th>
+            <th>Tags</th>
+            <th>Ação</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+    <div class="row">
+      <a class="btn blue" href="">Adicionar</a>
+    </div>
   </div>
 @endsection
