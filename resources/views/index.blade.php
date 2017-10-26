@@ -16,11 +16,19 @@
           </tr>
         </thead>
         <tbody>
+          @foreach($imagens as $imagem)
+            <tr>
+              <td><img src="{{$registro->path}}" width="120" alt=""></td>
+              <td>{{$registro->nome}}</td>
+              <td>{{$registro->tags}}</td>
+              <td><a href="{{$registro->path}}" class="btn deep-green" download></a></td>
+            </tr>
+          @endforeach
         </tbody>
       </table>
     </div>
     <div class="row">
-      <a class="btn blue" href="">Adicionar</a>
+      <a class="btn blue" href="{{route('adicionar')}}">Adicionar</a>
     </div>
   </div>
 @endsection
