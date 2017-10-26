@@ -9,9 +9,14 @@
 <div class="file-field input-field">
   <div class="btn blue">
     <span>Imagem</span>
-    <input type="file" name="Imagem">
+    <input type="file" name="imagem">
   </div>
   <div class="file-path-wrapper">
-    <input type="text" name="path" class="file-path validate">
+    <input type="text" class="file-path validate">
   </div>
+  @if(isset($imagens->imagem))
+<div class="input-field">
+  <img width="150" src="{{asset($imagens->imagem)}}" />
+</div>
+@endif
 </div>

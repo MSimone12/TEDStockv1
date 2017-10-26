@@ -17,6 +17,8 @@ Route::post('/salvar',['as'=>'salvar','uses'=>'ImagensController@salvar']);
 Route::get('/editar/{id}',['as'=>'editar','uses'=>'ImagensController@editar']);
 Route::put('/atualizar/{id}',['as'=>'atualizar','uses'=>'ImagensController@atualizar']);
 Route::get('/deletar/{id}',['as'=>'deletar','uses'=>'ImagensController@deletar']);
+Route::get('/download/{id}',['as'=>'download','uses'=>'ImagensController@download']);
+Route::get('/download/{id}/{tipo}',['as'=>'download','uses'=>'ImagensController@downloadTipo']);
 
 Route::get('/login',['as'=>'login','uses'=>'ImagensController@login']);
 Route::get('/login/registrar',['as'=>'login.registrar','uses'=>'ImagensController@registrar']);

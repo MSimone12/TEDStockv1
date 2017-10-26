@@ -17,11 +17,12 @@
         </thead>
         <tbody>
           @foreach($imagens as $imagem)
+          <input type="hidden" name="path" value="{{$imagem->path}}">
             <tr>
-              <td><img src="{{$registro->path}}" width="120" alt=""></td>
-              <td>{{$registro->nome}}</td>
-              <td>{{$registro->tags}}</td>
-              <td><a href="{{$registro->path}}" class="btn deep-green" download></a></td>
+              <td><img src="{{asset($imagem->imagem)}}" width="120" alt=""></td>
+              <td>{{$imagem->nome}}</td>
+              <td>{{$imagem->tags}}</td>
+              <td><a href="{{route('download',$imagem->id)}}" class="btn deep-green">Download</a></td>
             </tr>
           @endforeach
         </tbody>
