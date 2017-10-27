@@ -1,6 +1,6 @@
 @extends('layout.site')
 
-@section('titulo', 'TEDStock')
+@section('titulo', 'TEDStock | Adicionar')
 
 @section('conteudo')
   <div class="container">
@@ -9,7 +9,7 @@
       <form class="" action="{{route('salvar')}}" method="post" enctype="multipart/form-data">
         {{csrf_field()}}
         @include('layout._form')
-        
+
         <button class="btn deep-orange">Salvar</button>
       </form>
     </div>

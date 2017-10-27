@@ -16,7 +16,7 @@ class CreateImagensTable extends Migration
         Schema::create('imagens', function (Blueprint $table) {
             $table->increments('id');
             $table->string('nome');
-            $table->string('path')->default("\\\\tlsbr.local/ARQUIVOS/FABRICA/02_banco_imagens/fabrica");
+            $table->string('path')->default("\\\\tlsbr.local\\ARQUIVOS\\FABRICA\\02_banco_imagens\\fabrica\\fontes\\");
             $table->string('tags');
             $table->string('imagem');
             $table->string('userup')->nullable();

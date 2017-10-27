@@ -13,9 +13,9 @@
     </head>
 
     <body>
-      <nav class="light-blue darken-4">
+      <nav class="light-blue cyan darken-4">
         <div class="nav-wrapper">
-          <a href="#" class="brand-logo center">TEDStock</a>
+          <a href="/" class="brand-logo" style="margin-left:10%;">TEDStock</a>
           <ul id="nav-mobile" class="right hide-on-med-and-down">
             <li><a href="/">HOME</a></li>
             <li><a href="/login">ENTRAR</a></li>
