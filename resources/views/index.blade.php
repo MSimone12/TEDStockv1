@@ -5,7 +5,7 @@
 @section('conteudo')
   <div class="container" style="height: 670px;">
     <h3 class="center">Imagens</h3>
-    <div class="row" style="height: 545px; overflow-y: scroll;">
+    <div class="row" style="max-height: 545px; overflow-y: scroll;">
       @foreach($imagens as $imagem)
         <div class="col s4">
           <div class="card small" style="height: 250px;">
